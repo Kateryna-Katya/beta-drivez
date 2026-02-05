@@ -62,6 +62,61 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
         </div>
     </header>
 
+    <main class="legal-page">
+    <section class="pages">
+        <div class="container">
+            <span class="section-tag">Support Center</span>
+            <h1>Контактная информация</h1>
+
+            <p class="lead-text">
+                Мы всегда открыты для новых проектов и профессиональных дискуссий. 
+                Свяжитесь с командой <strong><?= $domainTitle ?></strong> любым удобным для вас способом. 
+                Наши специалисты в Берлине готовы ответить на ваши вопросы по будням с 09:00 до 18:00 (CET).
+            </p>
+
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-card__icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h2>Пишите нам</h2>
+                    <p>Для общих вопросов, предложений и запросов на консалтинг:</p>
+                    <a href="mailto:support@<?= $fullDomain ?>" class="contact-link">support@<?= $fullDomain ?></a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card__icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h2>Звоните</h2>
+                    <p>Прямая линия поддержки клиентов и экспертных консультаций:</p>
+                    <a href="tel:+390697889457" class="contact-link">+390697889457</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card__icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h2>Наш офис</h2>
+                    <p>Главный офис компании <strong><?= $domainTitle ?></strong> расположен по адресу:</p>
+                    <address class="contact-address">
+                        Friedrichstraße 176,<br>
+                        10117 Berlin,<br>
+                        Germany
+                    </address>
+                </div>
+            </div>
+
+            <div class="contact-extra">
+                <p>
+                    Предложение активно только в странах ЕС. Вы также можете воспользоваться формой обратной связи на 
+                    <a href="./#contact">главной странице</a> для быстрой отправки запроса.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
 
 
     

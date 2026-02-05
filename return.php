@@ -62,7 +62,78 @@ $domainTitle = ucwords(str_replace('-', ' ', $domainSlug));
         </div>
     </header>
 
+    <main class="legal-page">
+    <section class="pages">
+        <div class="container">
+            <span class="section-tag">Payment & Refunds</span>
+            <h1>Политика возврата средств</h1>
+            
+            <div class="legal-content">
+                <div class="policy-hero-card refund-accent">
+                    <p>
+                        Мы стремимся к максимальной прозрачности во взаимоотношениях с нашими клиентами. 
+                        В <strong><?= $domainTitle ?></strong> предусмотрена четкая процедура возврата средств, 
+                        основанная на качестве предоставляемых услуг и защите прав потребителей.
+                    </p>
+                </div>
 
+                <h2>Условия для оформления возврата</h2>
+                <div class="refund-grid">
+                    <div class="refund-card">
+                        <i class="fas fa-file-contract"></i>
+                        <h3>Несоответствие программе</h3>
+                        <p>Если содержание материалов существенно отличается от заявленного на <strong><?= $domainTitle ?></strong>.</p>
+                    </div>
+                    <div class="refund-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>Технические проблемы</h3>
+                        <p>Критические ошибки на <strong><?= $fullDomain ?></strong>, которые не были устранены в разумные сроки.</p>
+                    </div>
+                    <div class="refund-card">
+                        <i class="fas fa-hourglass-half"></i>
+                        <h3>Период охлаждения</h3>
+                        <p>Отказ в течение 14 дней с момента оплаты при условии минимального использования материалов.</p>
+                    </div>
+                </div>
+
+                <div class="procedure-block">
+                    <h2>Процедура запроса на возврат</h2>
+                    <p>Чтобы инициировать процедуру на платформе <strong><?= $domainTitle ?></strong>, выполните следующие шаги:</p>
+                    <div class="steps-mini">
+                        <div class="step-mini"><span>1</span> Письмо на <a href="mailto:hello@<?= $fullDomain ?>">hello@<?= $fullDomain ?></a></div>
+                        <div class="step-mini"><span>2</span> Тема: «Запрос на возврат средств»</div>
+                        <div class="step-mini"><span>3</span> Данные: ФИО, Email, Название программы</div>
+                        <div class="step-mini"><span>4</span> Подробное описание причины запроса</div>
+                    </div>
+                </div>
+
+                <h2>Сроки и способ возврата</h2>
+                <p>
+                    После одобрения вашего запроса, возврат денежных средств будет
+                    произведен в течение <strong>7–14 рабочих дней</strong>. Средства возвращаются
+                    тем же способом, которым была совершена оплата. Обратите внимание, что фактический срок зачисления
+                    зависит от регламента вашего банка в Германии или стране вашего пребывания.
+                </p>
+
+                <div class="warning-block">
+                    <h2>Исключения и ограничения</h2>
+                    <ul class="legal-list">
+                        <li>Запрос подан по истечении 14 календарных дней с момента оплаты.</li>
+                        <li>Вы уже просмотрели или скачали более 50% материалов программы.</li>
+                        <li>Технические проблемы на стороне пользователя (софт, соединение).</li>
+                        <li>Нарушение условий Пользовательского соглашения <strong><?= $domainTitle ?></strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="contact-footer-policy">
+                    <h2>Свяжитесь с нами</h2>
+                    <p>По всем вопросам, связанным с возвратом средств, обращайтесь в нашу службу поддержки:</p>
+                    <a href="mailto:hello@<?= $fullDomain ?>" class="policy-mail">hello@<?= $fullDomain ?></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 
 
