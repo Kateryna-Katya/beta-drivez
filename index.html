@@ -272,14 +272,114 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="faq__wrapper">
+                    <div class="section-header text-center">
+                        <span class="section-tag">F.A.Q</span>
+                        <h2 class="section-title">Остались вопросы? <br><span class="text-gradient">У нас есть ответы</span>
+                        </h2>
+                    </div>
+        
+                    <div class="faq__list">
+                        <div class="faq__item">
+                            <div class="faq__question">
+                                <span>Нужен ли опыт в программировании для старта?</span>
+                                <div class="faq__icon"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="faq__answer">
+                                <p>Нет, наша программа разработана так, что в ней легко разобраться без опыта. Мы предлагаем
+                                    пошаговый путь, понятный каждому, начиная с самых основ цифровой инфраструктуры.</p>
+                            </div>
+                        </div>
+        
+                        <div class="faq__item">
+                            <div class="faq__question">
+                                <span>Как долго длится обучение?</span>
+                                <div class="faq__icon"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="faq__answer">
+                                <p>Интенсивный курс рассчитан на 6 месяцев. Однако доступ к платформе открыт навсегда, так что
+                                    вы можете переосмыслить подход к развитию и обучаться в своем темпе.</p>
+                            </div>
+                        </div>
+        
+                        <div class="faq__item">
+                            <div class="faq__question">
+                                <span>Актуальны ли знания для рынка Европы?</span>
+                                <div class="faq__icon"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="faq__answer">
+                                <p>Абсолютно. Платформа уже доступна в Европе, и наши методологии адаптированы под требования
+                                    ведущих IT-хабов Германии и других стран ЕС.</p>
+                            </div>
+                        </div>
+        
+                        <div class="faq__item">
+                            <div class="faq__question">
+                                <span>Есть ли поддержка после окончания?</span>
+                                <div class="faq__icon"><i class="fas fa-plus"></i></div>
+                            </div>
+                            <div class="faq__answer">
+                                <p>Да, вы получаете экспертную поддержку на всех этапах. Мы помогаем с подготовкой к интервью и
+                                    предоставляем рекомендации для наших партнеров.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <span class="section-tag">Свяжитесь с нами</span>
+                        <h2 class="section-title">Готовы к <br><span class="text-gradient">быстрому старту?</span></h2>
+                        <p class="contact__text">Запросите бесплатную консультацию по всем вопросам. Наши эксперты свяжутся с
+                            вами в течение 15 минут.</p>
+        
+                        <div class="contact__methods">
+                            <div class="method-card">
+                                <i class="fas fa-headset"></i>
+                                <span>Экспертная поддержка на всех этапах</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="contact__form-wrapper">
+                        <form id="mainForm" class="form">
+                            <div class="form__group">
+                                <input type="text" name="name" class="form__input" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" name="email" class="form__input" placeholder="Email" required>
+                            </div>
+                            <div class="form__group">
+                                <input type="tel" name="phone" id="phoneInput" class="form__input"
+                                    placeholder="Телефон (+390...)" required>
+                            </div>
+        
+                            <div class="form__captcha">
+                                <span id="captchaQuestion" class="captcha-text"></span>
+                                <input type="number" id="captchaInput" class="form__input form__input--captcha" placeholder="?"
+                                    required>
+                            </div>
+        
+                            <div class="form__agree">
+                                <label class="checkbox">
+                                    <input type="checkbox" required checked>
+                                    <span class="checkbox__text">Согласен с политикой конфиденциальности</span>
+                                </label>
+                            </div>
+        
+                            <button type="submit" class="btn btn--primary btn--block">Узнать детали</button>
+        
+                            <div id="formMessage" class="form__message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -334,7 +434,26 @@
             </div>
         </div>
     </footer>
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__content">
+        <ul class="mobile-menu__list">
+            <li><a href="./#hero" class="mobile-menu__link">Главная</a></li>
+            <li><a href="./#courses" class="mobile-menu__link">Направления</a></li>
+            <li><a href="./#method" class="mobile-menu__link">Методология</a></li>
+            <li><a href="./#career" class="mobile-menu__link">Карьера</a></li>
+            <li><a href="./#faq" class="mobile-menu__link">FAQ</a></li>
+            <li><a href="./#contact" class="mobile-menu__link btn btn--primary">Начать сейчас</a></li>
+        </ul>
+    </div>
+</div>
 
+<div id="cookiePopup" class="cookie-popup">
+    <div class="cookie-popup__inner">
+        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie
+                политике</a>.</p>
+        <button id="acceptCookies" class="btn btn--secondary btn--sm">Принять</button>
+    </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
