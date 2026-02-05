@@ -52,3 +52,29 @@ gsap.from(".hero__code-window", {
     ease: "elastic.out(1, 0.75)",
     delay: 0.8
 });
+// Внутри DOMContentLoaded
+const cards = document.querySelectorAll('.course-card');
+
+cards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / card.clientWidth) * 100;
+        const y = ((e.clientY - rect.top) / card.clientHeight) * 100;
+        
+        card.style.setProperty('--mouse-x', `${x}%`);
+        card.style.setProperty('--mouse-y', `${y}%`);
+    });
+});
+// Внутри DOMContentLoaded после инициализации GSAP
+const steps = document.querySelectorAll('.step-card');
+
+steps.forEach((step, index) => {
+    ScrollTrigger.create({
+        trigger: step,
+        start: "top 80%",
+        end: "bottom 20%",
+        onEnter: () => step.classList.add('is-active'),
+        onLeaveBack: () => step.classList.remove('is-active'),
+        // Опционально: добавить легкий параллакс для каждого шага
+    });
+});
